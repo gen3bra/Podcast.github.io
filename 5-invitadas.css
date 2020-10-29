@@ -1,0 +1,38 @@
+h2 {
+  color: #060A24;
+  font-size: 2.25em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 1.25em 0px 0.5em 0.5em;
+}
+
+.invitadas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.invitadas img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  br {
+    display: none;
+  }
+  .estelares {
+    padding-left: 1.5em;
+  }
+  .invitadas {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .estelares {
+    padding-left: 2.3em;
+  }
+}
+/*# sourceMappingURL=5-invitadas.css.map */

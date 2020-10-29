@@ -1,0 +1,78 @@
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone .telefono {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -3.125em;
+}
+
+.phone .telefono img {
+  width: 80%;
+  z-index: 1;
+}
+
+.phone .parrafo h2 {
+  color: #060A24;
+  font-size: 2.25em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 1.25em 0px 0.5em 0.5em;
+}
+
+.phone .parrafo p {
+  color: #060A24;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.875em;
+  margin: 1.25em 0.8125em 1.0625em 1.25em;
+  line-height: 150%;
+  /*margin: 0px 0.8125em 1em 1.25em;*/
+}
+
+@media screen and (min-width: 768px) {
+  .phone {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .phone .telefono {
+    margin-top: 0px;
+  }
+  .phone .telefono img {
+    width: 80%;
+  }
+  .phone .parrafo {
+    width: 90%;
+    margin-left: -1.5em;
+  }
+  .phone .parrafo br {
+    display: inline;
+  }
+  .phone .parrafo h2 .salto {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .parrafo {
+    width: 85%;
+    padding-left: 2.5em;
+  }
+}
+/*# sourceMappingURL=4-phone.css.map */

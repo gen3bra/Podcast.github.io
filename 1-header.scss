@@ -1,0 +1,136 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.75em;
+    background: #FFFFFF;
+    
+
+    .logo{
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0.8em 0px 0px 1em;
+     }
+
+     nav{
+        padding-top: 0.85em;
+        padding-right: 1em;
+    
+        input{
+            display: none;
+        }
+    
+        input:checked ~ ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    
+       label{
+            box-sizing: border-box;
+            display: inline-block;
+            cursor: pointer;
+            width: 1.125em;
+            height: 0.75em;
+        }
+    
+        .open {
+            display: block;
+          }
+          
+        .close {
+            display: none;
+          }
+    
+          input:checked ~ .open {
+            display: none;
+          }
+
+          input:checked ~ .close {
+            display: block;
+          }
+    
+        ul{
+            position: absolute;
+            display: none;
+            top: 2.5em;
+            padding: 0;
+            right: 0;
+            width: 100%;
+            height: 14em;
+            background-color: #0000EC;
+
+            li{
+              list-style: none;
+
+              a{
+                display: block;
+                padding: 0.625em;
+                margin-left: 0.1875em;
+                color: #FFFFFF;
+                font-family: 'IBM Plex Mono', monospace;
+                letter-spacing: 0;
+                line-height: 1.75em;
+                font-size: 1em;
+                cursor: pointer;
+                text-decoration: none;
+
+                a:hover {
+                  filter: brightness(110%);
+                }
+              }
+            }
+          }
+      }
+}
+
+@media screen and (min-width: 768px){
+
+header{
+ 
+    .logo{
+      margin-top: 1.5em;
+      margin-left: 4em;
+    }
+
+  nav{
+  
+      .open{
+        display: none;
+        position: unset;
+      }  
+    
+      ul{
+        background-color: unset;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: -2.5em 3.75em ;
+      
+        li{
+          margin-right: 1.25em;
+
+          a{
+            text-decoration: none;
+            color: #060A24;
+            font-family: IBMPlexMono;
+            font-size: 1em;
+            margin: 0.625em 0px;
+          }
+
+          a:hover{
+            color: #00F3BB;
+            text-decoration: line-through;
+            transform: scale(1.1);
+          }
+
+          a:active {
+            color: rgba(6,10,36,0.56);
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

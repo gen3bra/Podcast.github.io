@@ -1,0 +1,80 @@
+.temas h2 {
+  color: #060A24;
+  font-size: 2.25em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 1.25em 0px 0.5em 0.5em;
+  margin-bottom: 1em;
+}
+
+.temas .temas2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.75em;
+}
+
+.temas .temas2 img {
+  margin-bottom: 1em;
+}
+
+.temas .temas2 h4 {
+  font-family: IBMPlexSans-SemiBold;
+  color: #060A24;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.temas .temas2 .br2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  br {
+    display: none;
+  }
+  .iconos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    padding: 0.625em 6.25em 0px 6.25em;
+  }
+  .iconos .temas2 img {
+    width: 30%;
+  }
+  .iconos .temas2 br {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1.25em 6.25em 0px 6.25em;
+  }
+  .iconos .temas2 .br2 {
+    display: inline;
+  }
+  .iconos .temas2 img {
+    width: 50%;
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=6-temas.css.map */

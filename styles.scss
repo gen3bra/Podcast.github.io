@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans&display=swap');
+
+@import '1-header';
+@import '2-introduccion';
+@import '3-podcast';
+@import '4-phone';
+@import '5-invitadas';
+@import '6-temas';
+@import '7-novedades';
+@import '8-footer';
+@import 'mixin';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}

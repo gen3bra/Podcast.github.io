@@ -1,0 +1,34 @@
+
+@mixin h2 {
+    color: #060A24;
+    font-size: 2.25em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 1.25em 0px 0.5em 0.5em;
+}
+
+@mixin p{
+    color: #060A24; 
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.875em;
+    margin: 1.25em 0.8125em 1.0625em 1.25em;
+    line-height: 150%;
+}
+
+@mixin boton {
+    background-color: #00F3BB;
+    text-align: center;
+    display: block;
+    width: 16em;
+    height: 2.65em;
+    margin: 2.0625em auto;
+    padding-top: 0.5em;
+}
+
+@mixin a{
+    text-decoration: none;
+    color: #060A24;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 1.375em;
+}

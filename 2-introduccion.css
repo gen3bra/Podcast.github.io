@@ -1,0 +1,103 @@
+.hello h1 {
+  color: #060A24;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2em;
+  margin: 1.0625em 0px 1.0625em 20px;
+}
+
+.hello h1 .world {
+  text-decoration: line-through;
+}
+
+.hello p {
+  color: #060A24;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.875em;
+  margin: 1.25em 0.8125em 1.0625em 1.25em;
+  line-height: 150%;
+}
+
+.hello p .span2 {
+  display: none;
+}
+
+.hello p .span3 {
+  display: none;
+}
+
+.hello .boton {
+  background-color: #00F3BB;
+  text-align: center;
+  display: block;
+  width: 16em;
+  height: 2.65em;
+  margin: 2.0625em auto;
+  padding-top: 0.5em;
+}
+
+.hello .boton a {
+  text-decoration: none;
+  color: #060A24;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 1.375em;
+}
+
+@media screen and (min-width: 768px) {
+  .hello {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3em 3em 0px 3em;
+  }
+  .hello h1 br {
+    display: none;
+  }
+  .hello p .span1 {
+    display: none;
+  }
+  .hello p .span2 {
+    display: inline;
+  }
+  .hello p .span3 {
+    display: inline;
+  }
+  .hello p br {
+    display: inline;
+  }
+  .hello .boton:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  }
+  .hello .boton:hover a:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hello {
+    margin: 7em 7em 0px 7em;
+  }
+  .hello h1 {
+    font-size: 4em;
+    margin-bottom: auto;
+  }
+  .hello h1 .span4 {
+    color: #0000EC;
+  }
+  .hello p {
+    line-height: 1.5em;
+    font-size: 1em;
+    margin-top: auto;
+    letter-spacing: -0.3px;
+  }
+  .hello .boton {
+    margin-left: 1.25em;
+    margin-bottom: unset;
+  }
+}
+/*# sourceMappingURL=2-introduccion.css.map */

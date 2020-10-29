@@ -1,0 +1,102 @@
+@import 'mixin';
+
+.hello{
+    
+    h1{
+        color: #060A24;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2em;
+        margin: 1.0625em 0px 1.0625em 20px;
+    
+        .world{
+            text-decoration: line-through;
+        }
+    }
+    
+    p{
+        @include p;
+
+        .span2{
+            display: none;
+        }
+        .span3{
+           display: none;
+        }
+        
+    }
+
+    .boton{
+        @include boton;
+
+        a{
+            @include a;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hello{
+        display: flex;
+        flex-direction: column;
+        margin: 3em 3em 0px 3em;
+
+            h1{
+                br{ display: none; 
+                } 
+            }
+
+            p{
+                .span1{
+                    display: none;
+                }
+        
+                .span2{
+                    display: inline;
+                }
+        
+                .span3{
+                    display: inline;
+                }
+                br{
+                    display: inline;
+                }
+            }
+    
+        .boton:hover{
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+
+            a:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}  
+
+
+@media screen and (min-width: 1024px){
+
+    .hello{
+        margin: 7em 7em 0px 7em;
+  
+        h1{
+            font-size: 4em;
+            margin-bottom: auto;
+
+            .span4{
+                color: #0000EC;
+            }
+        }
+
+        p{
+            line-height: 1.5em;
+            font-size: 1em;
+            margin-top: auto;
+            letter-spacing: -0.3px;
+        }
+
+        .boton{
+            margin-left: 1.25em;
+            margin-bottom: unset;
+        }
+    }
+}
